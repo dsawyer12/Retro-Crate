@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox fx:id="root" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="consoleImg" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+              <Image url="@../icons/folder-7-512.png" />
+          </image>
+      </ImageView>
+      <Label fx:id="title" prefHeight="30.0" text="Nintendo 64" textFill="WHITE" wrapText="true">
+         <HBox.margin>
+            <Insets left="30.0" />
+         </HBox.margin>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</HBox>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <HBox stylesheets="@../css/main.css" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox fx:id="sideNav" maxWidth="320.0" prefWidth="300.0" styleClass="side_pane" stylesheets="@../css/main.css">
+               <children>
+                  <AnchorPane stylesheets="@../css/main.css">
+                     <children>
+                        <Label layoutX="85.0" layoutY="22.0" prefHeight="32.0" text="Retro-Crate" textFill="WHITE" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="22.0">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <VBox fx:id="innerSideNav" stylesheets="@../css/main.css" VBox.vgrow="ALWAYS">
+                     <children>
+                        <AnchorPane stylesheets="@../css/main.css">
+                           <children>
+                              <TextField fx:id="searchBar" layoutX="26.0" layoutY="3.0" promptText="Search..." stylesheets="@../css/main.css" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane stylesheets="@../css/main.css" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ListView fx:id="listView" layoutY="29.0" style="-fx-background-color: #2020;" stylesheets="@../css/main.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <AnchorPane minHeight="-Infinity" prefHeight="40.0" styleClass="new_folder" stylesheets="@../css/main.css">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="70.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/plus-8-512.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="98.0" layoutY="12.0" text="Create new Folder" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="main_border_pane" stylesheets="@../css/main.css" HBox.hgrow="ALWAYS">
+               <center>
+                  <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefWidth="150.0" style="-fx-border-width: 0 1 0 0; -fx-border-color: #636363;" stylesheets="@../css/main.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <ListView layoutX="-14.0" style="-fx-background-color: #1a1a1a;" stylesheets="@../css/main.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/main.css" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="40.0" top="40.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </center>
+               <top>
+                  <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@../css/main.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane stylesheets="@../css/main.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="topPaneTitle" layoutX="29.0" layoutY="27.0" text="Nintendo 64" textFill="WHITE" AnchorPane.leftAnchor="35.0">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" stylesheets="@../css/main.css" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </children>
+      </HBox>
+      <AnchorPane minHeight="-Infinity" prefHeight="40.0" styleClass="info_pane" stylesheets="@../css/main.css">
+         <children>
+            <Label layoutX="14.0" layoutY="12.0" text="Connection : " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="12.0" text="Connected" textFill="#71d672">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="134.0" layoutY="12.0" text="Succesfully connected to your local database." textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,74 @@
+.root {
+    -fx-background-color: #202020;
+}
+
+.main_border_pane {
+    -fx-background-color: #1a1a1a;
+}
+
+.text-field {
+    -fx-prompt-text-fill: #BABABA;
+    -fx-control-inner-background: #3E3E3E;
+    -fx-focus-color: -fx-control-inner-background ;
+    -fx-faint-focus-color: -fx-control-inner-background ;
+}
+
+.search_btn {
+    -fx-background-color: #656565;
+    -fx-border-color: #BABABA;
+    -fx-border-radius: 0 2 2 0;
+    -fx-background-radius: 0 2 2 0;
+}
+
+.side_pane {
+    -fx-background-color: #202020;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: #636363;
+}
+
+.info_pane {
+    -fx-background-color: #202020;
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #636363;
+}
+
+.new_folder {
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #636363;
+}
+
+.list-view {
+    -fx-selection-bar:#0B90B5;
+    -fx-background-color: #3E3E3E, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+}
+
+.list-view .scroll-bar:vertical .increment-arrow,
+.list-view .scroll-bar:vertical .decrement-arrow,
+.list-view .scroll-bar:vertical .increment-button,
+.list-view .scroll-bar:vertical .decrement-button {
+    -fx-padding: 0px;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: #171717;
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: #121212;
+}
+
+.list-view .list-cell:selected:odd,
+.list-view .list-cell:selected:even {
+    -fx-background-color: -fx-background;
+}
+
+
+/*
+change the color of an image or icon
+
+.triangle {
+   -fx-effect: innershadow( gaussian , #1E2D44 , 7 , 1 , 1 , 1 );
+}
+
+*/
