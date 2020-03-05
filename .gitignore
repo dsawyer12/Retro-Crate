@@ -16,7 +16,9 @@ gradle-app.setting
 # From https://github.com/github/gitignore/blob/master/Java.gitignore
 *.class
 
-.db
+*.db
+/files/
+
 
 # Package Files #
 *.jar

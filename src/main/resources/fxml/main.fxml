@@ -72,10 +72,14 @@
                      <children>
                         <AnchorPane prefWidth="150.0" style="-fx-border-width: 0 1 0 0; -fx-border-color: #636363;" stylesheets="@../css/main.css" HBox.hgrow="ALWAYS">
                            <children>
-                              <ListView layoutX="-14.0" style="-fx-background-color: #1a1a1a;" stylesheets="@../css/main.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <ListView layoutX="-14.0" prefWidth="200.0" style="-fx-background-color: #1a1a1a;" stylesheets="@../css/main.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Label fx:id="consoleDescription1" layoutX="36.0" layoutY="14.0" prefHeight="62.0" prefWidth="200.0" text="labe labe label ababddbadbadb" textFill="WHITE" wrapText="true" />
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/main.css" HBox.hgrow="ALWAYS" />
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefWidth="200.0" stylesheets="@../css/main.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="consoleDescription" text="labe labe label ababddbadbadb" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                           </children></AnchorPane>
                      </children>
                      <BorderPane.margin>
                         <Insets bottom="40.0" top="40.0" />
